@@ -47,6 +47,7 @@ nav{
     width: 1000px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding: 1rem;
     margin: 0 auto;
 }
@@ -87,4 +88,25 @@ button:hover{
     background-color: rgb(27, 124, 27);
     border-radius: 3px;
     transform: skew(-3deg,3deg);
+}
+@media (max-width:1100px) {
+    nav{
+        width: 300px;
+        justify-content: center;
+    }
+    nav ul{
+        gap: 10px;
+        margin-left: 10px;
+    }
+    .not{
+        width: 80px;
+    }
+    ul li:not(.not){
+        width: 60px;
+        height: 40px;
+    }
+    .logo{
+        width: 100px;
+        font-size: 1rem;
+    }
 }
