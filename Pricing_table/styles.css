@@ -1,0 +1,30 @@
+:root{
+    --background-color:#ece4df;
+}
+body{
+    height: 100vh;
+    width: 100vw;
+    color: black;
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--background-color);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box{
+    width: 1000px;
+    height: 650px;
+    display: grid;
+}
+
+.row{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+.first-row{
+}
+
