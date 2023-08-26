@@ -1,5 +1,12 @@
 :root{
     --background-color:#ece4df;
+    --color-one:rgb(238, 238, 238);
+    --color-two:rgb(226, 226, 226);
+    --line:rgb(128, 128, 128);
+}
+*{
+    margin: 0;
+    padding: 0;
 }
 body{
     height: 100vh;
@@ -7,24 +14,209 @@ body{
     color: black;
     font-family: 'Poppins', sans-serif;
     background-color: var(--background-color);
-    margin: 0;
-    padding: 0;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .box{
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     width: 1000px;
-    height: 650px;
+    height: 520px;
     display: grid;
+    grid-template-rows: 100px 70px 70px 70px 70px 70px 70px;
 }
 
 .row{
     display: grid;
     grid-template-columns: repeat(5, 1fr);
+    height: 100%;
+    width: 100%;
+}
+.row1{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    height: 100%;
+    width: 100%;
 }
 
-.first-row{
+fieldset{
+    border: 1px solid rgb(41, 41, 41);
 }
 
+.first-row .box-one{
+    background-color: #198ef5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    letter-spacing: 1px;
+}
+.first-row .box-two{
+    background-color: #5ab951;
+}
+.first-row .box-three{
+    background-color: #ffdb3c;
+}
+.first-row .box-four{
+    background-color: #f7422a;
+}
+.first-row .box-five{
+    background-color: #e628ff;
+}
+
+.secound-row .box-one{
+    background-color: var(--color-one);
+    border-right: 1px solid var(--line);
+    border-left: 1px solid var(--line);
+}
+.secound-row .box-two{
+    background-color: var(--color-two);
+    border-right: 1px solid var(--line);
+    border-left: 1px solid var(--line);
+}
+.secound-row .box-three{
+    background-color: var(--color-one);
+    border-right: 1px solid var(--line);
+    border-left: 1px solid var(--line);
+}
+.secound-row .box-four{
+    background-color: var(--color-two);
+    border-right: 1px solid var(--line);
+    border-left: 1px solid var(--line);
+}
+.secound-row .box-five{
+    background-color: var(--color-one);
+    border-right: 1px solid var(--line);
+    border-left: 1px solid var(--line);
+}
+
+.third-row .box-one{
+    background-color: var(--color-two);
+    border-right: 1px solid var(--line);
+    border-left: 1px solid var(--line);
+}
+.third-row .box-two{
+    background-color: var(--color-one);
+    border-right: 1px solid var(--line);
+    border-left: 1px solid var(--line);
+}
+.third-row .box-three{
+    background-color: var(--color-two);
+    border-right: 1px solid var(--line);
+    border-left: 1px solid var(--line);
+}
+.third-row .box-four{
+    background-color: var(--color-one);
+    border-right: 1px solid var(--line);
+    border-left: 1px solid var(--line);
+}
+.third-row .box-five{
+    background-color: var(--color-two);
+    border-right: 1px solid var(--line);
+    border-left: 1px solid var(--line);
+}
+
+.fourth-row .box-one{
+    background-color: var(--color-one);
+    border-right: 1px solid var(--line);
+    border-left: 1px solid var(--line);
+}
+.fourth-row .box-two{
+    background-color: var(--color-two);
+    border-right: 1px solid var(--line);
+    border-left: 1px solid var(--line);
+}
+.fourth-row .box-three{
+    background-color: var(--color-one);
+    border-right: 1px solid var(--line);
+    border-left: 1px solid var(--line);
+}
+.fourth-row .box-four{
+    background-color: var(--color-two);
+    border-right: 1px solid var(--line);
+    border-left: 1px solid var(--line);
+}
+.fourth-row .box-five{
+    background-color: var(--color-one);
+    border-right: 1px solid var(--line);
+    border-left: 1px solid var(--line);
+}
+
+.fifth-row .box-one{
+    background-color: var(--color-two);
+    border-right: 1px solid var(--line);
+    border-left: 1px solid var(--line);
+}
+.fifth-row .box-two{
+    background-color: var(--color-one);
+    border-right: 1px solid var(--line);
+    border-left: 1px solid var(--line);
+}
+.fifth-row .box-three{
+    background-color: var(--color-two);
+    border-right: 1px solid var(--line);
+    border-left: 1px solid var(--line);
+}
+.fifth-row .box-four{
+    background-color: var(--color-one);
+    border-right: 1px solid var(--line);
+    border-left: 1px solid var(--line);
+}
+.fifth-row .box-five{
+    background-color: var(--color-two);
+    border-right: 1px solid var(--line);
+    border-left: 1px solid var(--line);
+}
+
+.sixth-row .box-one{
+    background-color: var(--color-one);
+    border-right: 1px solid var(--line);
+    border-left: 1px solid var(--line);
+}
+.sixth-row .box-two{
+    background-color: var(--color-two);
+    border-right: 1px solid var(--line);
+    border-left: 1px solid var(--line);
+}
+.sixth-row .box-three{
+    background-color: var(--color-one);
+    border-right: 1px solid var(--line);
+    border-left: 1px solid var(--line);
+}
+.sixth-row .box-four{
+    background-color: var(--color-two);
+    border-right: 1px solid var(--line);
+    border-left: 1px solid var(--line);
+}
+.sixth-row .box-five{
+    background-color: var(--color-one);
+    border-right: 1px solid var(--line);
+    border-left: 1px solid var(--line);
+}
+
+.seventh-row .box-one{
+    background-color: var(--color-two);
+    border-right: 1px solid var(--line);
+    border-left: 1px solid var(--line);
+}
+.seventh-row .box-two{
+    background-color: var(--color-one);
+    border-right: 1px solid var(--line);
+    border-left: 1px solid var(--line);
+}
+.seventh-row .box-three{
+    background-color: var(--color-two);
+    border-right: 1px solid var(--line);
+    border-left: 1px solid var(--line);
+}
+.seventh-row .box-four{
+    background-color: var(--color-one);
+    border-right: 1px solid var(--line);
+    border-left: 1px solid var(--line);
+}
+.seventh-row .box-five{
+    background-color: var(--color-two);
+    border-right: 1px solid var(--line);
+    border-left: 1px solid var(--line);
+}
