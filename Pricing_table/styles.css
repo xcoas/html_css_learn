@@ -42,15 +42,28 @@ body{
 
 fieldset{
     border: 1px solid rgb(41, 41, 41);
+    width: 100%;
 }
 
-.first-row .box-one{
-    background-color: #198ef5;
+.fa-circle-xmark{
+    color: rgb(190, 4, 4);
+    font-size: 1.2rem;
+}
+.fa-circle-check{
+    color: green;
+    font-size: 1.2rem;
+}
+
+.rank{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     letter-spacing: 1px;
+    text-align: center;
+}
+.first-row .box-one{
+    background-color: #198ef5;
 }
 .first-row .box-two{
     background-color: #5ab951;
@@ -219,4 +232,31 @@ fieldset{
     background-color: var(--color-two);
     border-right: 1px solid var(--line);
     border-left: 1px solid var(--line);
+}
+
+.bold{
+    font-weight: bold;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    padding-left: 4px;
+}
+
+@media screen and (max-width:800px) {
+    body{
+        font-size: 0.8rem;
+    }
+    .bold{
+        font-size: 0.8rem;
+    }
+}
+@media screen and (max-width:600px) {
+    body{
+        font-size: 0.6rem;
+    }
+}
+@media screen and (max-width:500px) {
+    body{
+        font-size: 0.5rem;
+    }
 }
