@@ -55,5 +55,5 @@ body{
 }
 .buttons .active{
     width: 30px;
-    transition: 0.3s;
+    transition: 0.2s;
 }
